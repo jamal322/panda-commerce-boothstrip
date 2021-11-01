@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid proparty in css</title>
+</head>
+<style>
+    .grid-container {
+        display: grid;
+        /* grid-template-columns: 30px repeat(3, 1fr) 30px; */
+        grid-template-columns: repeat(4, 200px);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 5px;
+    }
+
+    .grid-seal {
+        border: 2px solid lightsalmon;
+    }
+</style>
+
+<body>
+    <h1>Grid container</h1>
+    <div class="grid-container">
+        <div class="grid-seal">grid seal-1</div>
+        <div class="grid-seal">grid seal-2</div>
+        <div class="grid-seal">grid seal-3</div>
+        <div class="grid-seal">grid seal-4</div>
+        <div class="grid-seal">grid seal-5</div>
+        <div class="grid-seal">grid seal-6</div>
+        <div class="grid-seal">grid seal-7</div>
+        <div class="grid-seal">grid seal-8</div>
+        <div class="grid-seal">grid seal-9</div>
+        <div class="grid-seal">grid seal-10</div>
+        <div class="grid-seal">grid seal-11</div>
+        <div class="grid-seal">grid seal-12</div>
+    </div>
+</body>
+
+</html>
